@@ -20,6 +20,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -38,6 +39,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
 </simulation_settings>*/
@@ -82,7 +84,7 @@ SIGNAL("SW[0]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "SW";
 }
 
 SIGNAL("SW[1]")
@@ -92,7 +94,7 @@ SIGNAL("SW[1]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "SW";
 }
 
 SIGNAL("SW[2]")
@@ -102,7 +104,7 @@ SIGNAL("SW[2]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "SW";
 }
 
 SIGNAL("SW[3]")
@@ -112,7 +114,7 @@ SIGNAL("SW[3]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "SW";
 }
 
 SIGNAL("KEY[0]")
@@ -122,7 +124,7 @@ SIGNAL("KEY[0]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "KEY";
 }
 
 SIGNAL("KEY[1]")
@@ -132,7 +134,7 @@ SIGNAL("KEY[1]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
-	PARENT = "";
+	PARENT = "KEY";
 }
 
 SIGNAL("LEDR[0]")
@@ -142,17 +144,17 @@ SIGNAL("LEDR[0]")
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-GROUP("SW")
-{
-	MEMBERS = "SW[0]", "SW[1]", "SW[2]", "SW[3]";
+	PARENT = "LEDR";
 }
 
 GROUP("KEY")
 {
-	MEMBERS = "KEY[0]", "KEY[1]";
+	MEMBERS = "KEY[1]", "KEY[0]";
+}
+
+GROUP("SW")
+{
+	MEMBERS = "SW[3]", "SW[2]", "SW[1]", "SW[0]";
 }
 
 GROUP("in")
@@ -167,28 +169,14 @@ TRANSITION_LIST("SW[0]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 5;
-			LEVEL 0 FOR 80.0;
-			LEVEL 1 FOR 80.0;
+			REPEAT = 40;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 10.0;
 		}
 	}
 }
 
 TRANSITION_LIST("SW[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 10;
-			LEVEL 0 FOR 40.0;
-			LEVEL 1 FOR 40.0;
-		}
-	}
-}
-
-TRANSITION_LIST("SW[2]")
 {
 	NODE
 	{
@@ -202,6 +190,20 @@ TRANSITION_LIST("SW[2]")
 	}
 }
 
+TRANSITION_LIST("SW[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		NODE
+		{
+			REPEAT = 10;
+			LEVEL 0 FOR 40.0;
+			LEVEL 1 FOR 40.0;
+		}
+	}
+}
+
 TRANSITION_LIST("SW[3]")
 {
 	NODE
@@ -209,9 +211,9 @@ TRANSITION_LIST("SW[3]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 40;
-			LEVEL 0 FOR 10.0;
-			LEVEL 1 FOR 10.0;
+			REPEAT = 5;
+			LEVEL 0 FOR 80.0;
+			LEVEL 1 FOR 80.0;
 		}
 	}
 }
@@ -223,9 +225,9 @@ TRANSITION_LIST("KEY[0]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 1;
-			LEVEL 0 FOR 320.0;
-			LEVEL 1 FOR 320.0;
+			REPEAT = 2;
+			LEVEL 0 FOR 160.0;
+			LEVEL 1 FOR 160.0;
 		}
 		LEVEL 0 FOR 160.0;
 	}
@@ -238,9 +240,9 @@ TRANSITION_LIST("KEY[1]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 2;
-			LEVEL 0 FOR 160.0;
-			LEVEL 1 FOR 160.0;
+			REPEAT = 1;
+			LEVEL 0 FOR 320.0;
+			LEVEL 1 FOR 320.0;
 		}
 		LEVEL 0 FOR 160.0;
 	}
@@ -278,7 +280,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "KEY[0]";
+	CHANNEL = "KEY[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
@@ -288,7 +290,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "KEY[1]";
+	CHANNEL = "KEY[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
@@ -309,7 +311,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SW[0]";
+	CHANNEL = "SW[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
@@ -319,7 +321,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SW[1]";
+	CHANNEL = "SW[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
@@ -329,7 +331,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SW[2]";
+	CHANNEL = "SW[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
@@ -339,7 +341,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "SW[3]";
+	CHANNEL = "SW[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;

@@ -63,5 +63,8 @@ set_global_assignment -name VERILOG_FILE lab2_5.v
 set_global_assignment -name VERILOG_FILE lab2_4.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2_4.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2_5.vwf
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2_33.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name VERILOG_FILE lab2_6.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform2_6.vwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

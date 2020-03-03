@@ -1,5 +1,5 @@
 Flow report for LAB2_MUX
-Tue Mar 03 19:52:48 2020
+Tue Mar 03 21:07:51 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,14 +40,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Mar 03 19:52:47 2020       ;
+; Flow Status                     ; Successful - Tue Mar 03 21:07:51 2020       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; LAB2_MUX                                    ;
 ; Top-level Entity Name           ; LAB2_MUX                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 1 / 32,070 ( < 1 % )                        ;
+; Logic utilization (in ALMs)     ; 3 / 32,070 ( < 1 % )                        ;
 ; Total registers                 ; 0                                           ;
 ; Total pins                      ; 24 / 457 ( 5 % )                            ;
 ; Total virtual pins              ; 0                                           ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/03/2020 19:46:48 ;
+; Start date & time ; 03/03/2020 21:02:09 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; LAB2_MUX            ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 247207017312411.158326120803708        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 247207017312411.158326572810612        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -96,17 +96,14 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 4814 MB             ; 00:00:18                           ;
-; Fitter                    ; 00:00:34     ; 1.0                     ; 6597 MB             ; 00:01:11                           ;
-; Assembler                 ; 00:00:06     ; 1.0                     ; 4825 MB             ; 00:00:06                           ;
-; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 5105 MB             ; 00:00:04                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4724 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4702 MB             ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 4815 MB             ; 00:00:18                           ;
+; Fitter                    ; 00:00:30     ; 1.0                     ; 6600 MB             ; 00:01:01                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 4826 MB             ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 5105 MB             ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4722 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4702 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4702 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4702 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4711 MB             ; 00:00:01                           ;
-; Total                     ; 00:01:01     ; --                      ; --                  ; 00:01:45                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4710 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:53     ; --                      ; --                  ; 00:01:32                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -122,9 +119,6 @@ refer to the applicable agreement for further details.
 ; EDA Netlist Writer        ; DESKTOP-V2OCQLV  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer        ; DESKTOP-V2OCQLV  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer        ; DESKTOP-V2OCQLV  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-V2OCQLV  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-V2OCQLV  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-V2OCQLV  ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 
@@ -136,10 +130,7 @@ quartus_fit --read_settings_files=off --write_settings_files=off LAB2_MUX -c LAB
 quartus_asm --read_settings_files=off --write_settings_files=off LAB2_MUX -c LAB2_MUX
 quartus_sta LAB2_MUX -c LAB2_MUX
 quartus_eda --read_settings_files=off --write_settings_files=off LAB2_MUX -c LAB2_MUX
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LAB2_MUX -c LAB2_MUX --vector_source="C:/Users/mszne/Desktop/SW projekty/LAB2/Waveform.vwf" --testbench_file="C:/Users/mszne/Desktop/SW projekty/LAB2/simulation/qsim/Waveform.vwf.vt"
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LAB2_MUX -c LAB2_MUX --vector_source="G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/Waveform1.vwf" --testbench_file="G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/simulation/qsim/Waveform1.vwf.vt"
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LAB2_MUX -c LAB2_MUX --vector_source="G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/Waveform1.vwf" --testbench_file="G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/simulation/qsim/Waveform1.vwf.vt"
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LAB2_MUX -c LAB2_MUX --vector_source="G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/Waveform2_33.vwf" --testbench_file="G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/simulation/qsim/Waveform2_33.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off LAB2_MUX -c LAB2_MUX --vector_source="G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/Waveform2_6.vwf" --testbench_file="G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/simulation/qsim/Waveform2_6.vwf.vt"
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/simulation/qsim/" LAB2_MUX -c LAB2_MUX
 
 

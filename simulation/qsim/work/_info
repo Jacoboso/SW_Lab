@@ -9,13 +9,13 @@ z2
 cModel Technology
 dC:/Users/mszne/Desktop/SW projekty/LAB2/simulation/qsim
 vLAB2_MUX
-Z0 !s110 1583261568
+Z0 !s110 1583266072
 !i10b 1
-!s100 nEJ>YV_G<7<QK]1c2SMaE0
-IQzdWd<D9KnJf^E4`8OVXX1
+!s100 nYLh_H=jEBTi]CTHf4M7L2
+Inn3Y=H^iH?RC=gniFnKGW2
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dG:/Semestr 6/SW/Lab 2/Repo/SW_Lab/simulation/qsim
-w1583261567
+w1583266071
 8LAB2_MUX.vo
 FLAB2_MUX.vo
 L0 31
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1583261568.000000
+Z4 !s108 1583266072.000000
 !s107 LAB2_MUX.vo|
 !s90 -work|work|LAB2_MUX.vo|
 !i113 1
@@ -33,21 +33,21 @@ n@l@a@b2_@m@u@x
 vLAB2_MUX_vlg_vec_tst
 R0
 !i10b 1
-!s100 YP<[d?V_8kPm=^cmdaiNj3
-I8neoFAWncG@O`6d0VmGV;1
+!s100 IfW<4_0GSmbFFma_cJZOJ2
+IZJGh]=PN9WYz@57iLn3a60
 R1
 R2
-w1583261566
-8Waveform2_33.vwf.vt
-FWaveform2_33.vwf.vt
+w1583266070
+8Waveform2_6.vwf.vt
+FWaveform2_6.vwf.vt
 L0 29
 R3
 r1
 !s85 0
 31
 R4
-!s107 Waveform2_33.vwf.vt|
-!s90 -work|work|Waveform2_33.vwf.vt|
+!s107 Waveform2_6.vwf.vt|
+!s90 -work|work|Waveform2_6.vwf.vt|
 !i113 1
 R5
 R6

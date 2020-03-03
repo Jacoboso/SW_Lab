@@ -1,0 +1,33 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/Semestr 6/SW/Lab 2/Repo/SW_Lab/simulation/modelsim
+vLAB2_MUX
+!s110 1583265553
+!i10b 1
+!s100 R7h@S_A233UmZ]TITW1[81
+ILo]eA9E=9;0IWHjNNP0O>3
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1583265213
+8G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v
+FG:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v
+L0 1
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1583265553.000000
+!s107 G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/Semestr 6/SW/Lab 2/Repo/SW_Lab|G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+G:/Semestr 6/SW/Lab 2/Repo/SW_Lab}
+tCvgOpt 0
+n@l@a@b2_@m@u@x

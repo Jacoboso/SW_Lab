@@ -1,11 +1,11 @@
-Fitter Status : Successful - Tue Mar 03 19:47:32 2020
+Fitter Status : Successful - Tue Mar 03 21:02:48 2020
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : LAB2_MUX
 Top-level Entity Name : LAB2_MUX
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 1 / 32,070 ( < 1 % )
+Logic utilization (in ALMs) : 3 / 32,070 ( < 1 % )
 Total registers : 0
 Total pins : 24 / 457 ( 5 % )
 Total virtual pins : 0

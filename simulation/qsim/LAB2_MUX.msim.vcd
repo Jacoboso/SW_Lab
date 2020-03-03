@@ -3,7 +3,7 @@ $comment
 		vcd file LAB2_MUX.msim.vcd -direction
 $end
 $date
-	Tue Mar 03 19:52:49 2020
+	Tue Mar 03 21:07:53 2020
 $end
 $version
 	ModelSim Version 10.5b
@@ -33,29 +33,30 @@ $var wire 1 / unknown $end
 $var tri1 1 0 devclrn $end
 $var tri1 1 1 devpor $end
 $var tri1 1 2 devoe $end
-$var wire 1 3 SW[2]~input_o $end
-$var wire 1 4 SW[3]~input_o $end
-$var wire 1 5 SW[4]~input_o $end
-$var wire 1 6 SW[5]~input_o $end
-$var wire 1 7 SW[6]~input_o $end
-$var wire 1 8 SW[7]~input_o $end
-$var wire 1 9 SW[8]~input_o $end
-$var wire 1 : SW[9]~input_o $end
-$var wire 1 ; KEY[1]~input_o $end
-$var wire 1 < KEY[2]~input_o $end
-$var wire 1 = KEY[3]~input_o $end
-$var wire 1 > ~QUARTUS_CREATED_GND~I_combout $end
-$var wire 1 ? SW[0]~input_o $end
-$var wire 1 @ SW[1]~input_o $end
-$var wire 1 A KEY[0]~input_o $end
-$var wire 1 B zad3|LEDR[0]~0_combout $end
+$var wire 1 3 SW[8]~input_o $end
+$var wire 1 4 SW[9]~input_o $end
+$var wire 1 5 KEY[2]~input_o $end
+$var wire 1 6 KEY[3]~input_o $end
+$var wire 1 7 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 8 KEY[0]~input_o $end
+$var wire 1 9 SW[0]~input_o $end
+$var wire 1 : SW[4]~input_o $end
+$var wire 1 ; SW[6]~input_o $end
+$var wire 1 < KEY[1]~input_o $end
+$var wire 1 = SW[2]~input_o $end
+$var wire 1 > zad6|m0|m2|LEDR[0]~0_combout $end
+$var wire 1 ? SW[3]~input_o $end
+$var wire 1 @ SW[7]~input_o $end
+$var wire 1 A SW[5]~input_o $end
+$var wire 1 B SW[1]~input_o $end
+$var wire 1 C zad6|m1|m2|LEDR[0]~0_combout $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-bx0 !
-bx00 "
+bx00 !
+bx00000000 "
 0,
 0+
 0*
@@ -76,126 +77,277 @@ x3
 x4
 x5
 x6
-x7
-x8
-x9
-x:
-x;
-x<
-x=
+07
+08
+09
+0:
+0;
+0<
+0=
 0>
 0?
 0@
 0A
 0B
+0C
 $end
 #10000
-bx10 "
-1@
+bx01 !
+bx00000001 "
+19
+18
 #20000
-bx11 "
-bx01 "
-1?
-0@
+bx11 !
+bx00000011 "
+bx10 !
+bx00000010 "
+09
 1B
-1,
+08
+1<
 #30000
-bx11 "
-1@
+bx11 !
+bx00000011 "
+19
+18
 #40000
-bx1 !
-bx10 "
-bx00 "
-0?
-0@
-1A
+bx00000111 "
+bx01 !
+bx00000101 "
+bx00 !
+bx00000100 "
+08
+0<
+09
 0B
-0,
+1=
 #50000
-bx10 "
-1@
-1B
+bx01 !
+bx00000101 "
+19
+18
+1>
 1,
 #60000
-bx11 "
-bx01 "
-1?
-0@
-0B
+bx11 !
+bx00000111 "
+bx10 !
+bx00000110 "
+09
+1B
+08
+1<
+0>
 0,
 #70000
-bx11 "
-1@
-1B
-1,
+bx11 !
+bx00000111 "
+19
+18
 #80000
-bx0 !
-bx10 "
-bx00 "
-0?
-0@
-0A
+bx00001111 "
+bx00001011 "
+bx01 !
+bx00001001 "
+bx00 !
+bx00001000 "
+08
+0<
+09
 0B
-0,
+0=
+1?
 #90000
-bx10 "
-1@
+bx01 !
+bx00001001 "
+19
+18
+1C
+1+
 #100000
-bx11 "
-bx01 "
-1?
-0@
+bx11 !
+bx00001011 "
+bx10 !
+bx00001010 "
+09
 1B
-1,
+08
+1<
+0C
+0+
 #110000
-bx11 "
-1@
+bx11 !
+bx00001011 "
+19
+18
 #120000
-bx1 !
-bx10 "
-bx00 "
-0?
-0@
-1A
+bx00001111 "
+bx01 !
+bx00001101 "
+bx00 !
+bx00001100 "
+08
+0<
+09
 0B
-0,
+1=
 #130000
-bx10 "
-1@
-1B
+bx01 !
+bx00001101 "
+19
+18
+1C
+1>
 1,
+1+
 #140000
-bx11 "
-bx01 "
-1?
-0@
-0B
+bx11 !
+bx00001111 "
+bx10 !
+bx00001110 "
+09
+1B
+08
+1<
+0C
+0>
 0,
+0+
 #150000
-bx11 "
-1@
-1B
-1,
+bx11 !
+bx00001111 "
+19
+18
 #160000
-bx0 !
-bx10 "
-bx00 "
-0?
-0@
-0A
+bx00011111 "
+bx00010111 "
+bx00010011 "
+bx01 !
+bx00010001 "
+bx00 !
+bx00010000 "
+08
+0<
+09
 0B
-0,
+0=
+0?
+1:
 #170000
-bx10 "
-1@
+bx01 !
+bx00010001 "
+19
+18
 #180000
-bx11 "
-bx01 "
-1?
-0@
+bx11 !
+bx00010011 "
+bx10 !
+bx00010010 "
+09
 1B
+08
+1<
+1>
 1,
 #190000
-bx11 "
-1@
+bx11 !
+bx00010011 "
+19
+18
+0>
+0,
 #200000
+bx00010111 "
+bx01 !
+bx00010101 "
+bx00 !
+bx00010100 "
+08
+0<
+09
+0B
+1=
+#210000
+bx01 !
+bx00010101 "
+19
+18
+1>
+1,
+#220000
+bx11 !
+bx00010111 "
+bx10 !
+bx00010110 "
+09
+1B
+08
+1<
+#230000
+bx11 !
+bx00010111 "
+19
+18
+0>
+0,
+#240000
+bx00011111 "
+bx00011011 "
+bx01 !
+bx00011001 "
+bx00 !
+bx00011000 "
+08
+0<
+09
+0B
+0=
+1?
+#250000
+bx01 !
+bx00011001 "
+19
+18
+1C
+1+
+#260000
+bx11 !
+bx00011011 "
+bx10 !
+bx00011010 "
+09
+1B
+08
+1<
+0C
+1>
+1,
+0+
+#270000
+bx11 !
+bx00011011 "
+19
+18
+0>
+0,
+#280000
+bx00011111 "
+bx01 !
+bx00011101 "
+bx00 !
+bx00011100 "
+08
+0<
+09
+0B
+1=
+#290000
+bx01 !
+bx00011101 "
+19
+18
+1C
+1>
+1,
+1+
+#300000

@@ -13,19 +13,94 @@ KEY[0] => KEY[0].IN1
 KEY[1] => KEY[1].IN1
 KEY[2] => KEY[2].IN1
 KEY[3] => KEY[3].IN1
-LEDR[0] <= lab2_3:zad3.port2
-LEDR[1] <= lab2_3:zad3.port2
-LEDR[2] <= lab2_3:zad3.port2
-LEDR[3] <= lab2_3:zad3.port2
-LEDR[4] <= lab2_3:zad3.port2
-LEDR[5] <= lab2_3:zad3.port2
-LEDR[6] <= lab2_3:zad3.port2
-LEDR[7] <= lab2_3:zad3.port2
-LEDR[8] <= lab2_3:zad3.port2
-LEDR[9] <= lab2_3:zad3.port2
+LEDR[0] <= lab2_6:zad6.port2
+LEDR[1] <= lab2_6:zad6.port2
+LEDR[2] <= lab2_6:zad6.port2
+LEDR[3] <= lab2_6:zad6.port2
+LEDR[4] <= lab2_6:zad6.port2
+LEDR[5] <= lab2_6:zad6.port2
+LEDR[6] <= lab2_6:zad6.port2
+LEDR[7] <= lab2_6:zad6.port2
+LEDR[8] <= lab2_6:zad6.port2
+LEDR[9] <= lab2_6:zad6.port2
 
 
-|LAB2_MUX|lab2_3:zad3
+|LAB2_MUX|lab2_6:zad6
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+SW[4] => SW[4].IN1
+SW[5] => SW[5].IN1
+SW[6] => SW[6].IN1
+SW[7] => SW[7].IN1
+KEY[0] => KEY[0].IN2
+KEY[1] => KEY[1].IN2
+LEDR[0] <= lab2_5:m0.port2
+LEDR[1] <= lab2_5:m1.port2
+
+
+|LAB2_MUX|lab2_6:zad6|lab2_5:m0
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+KEY[0] => KEY[0].IN2
+KEY[1] => KEY[1].IN1
+LEDR[0] <= lab2_3:m2.port2
+
+
+|LAB2_MUX|lab2_6:zad6|lab2_5:m0|lab2_3:m0
+SW[0] => m.IN0
+SW[1] => m.IN0
+KEY[0] => m.IN1
+KEY[0] => m.IN1
+LEDR[0] <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LAB2_MUX|lab2_6:zad6|lab2_5:m0|lab2_3:m1
+SW[0] => m.IN0
+SW[1] => m.IN0
+KEY[0] => m.IN1
+KEY[0] => m.IN1
+LEDR[0] <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LAB2_MUX|lab2_6:zad6|lab2_5:m0|lab2_3:m2
+SW[0] => m.IN0
+SW[1] => m.IN0
+KEY[0] => m.IN1
+KEY[0] => m.IN1
+LEDR[0] <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LAB2_MUX|lab2_6:zad6|lab2_5:m1
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+SW[3] => SW[3].IN1
+KEY[0] => KEY[0].IN2
+KEY[1] => KEY[1].IN1
+LEDR[0] <= lab2_3:m2.port2
+
+
+|LAB2_MUX|lab2_6:zad6|lab2_5:m1|lab2_3:m0
+SW[0] => m.IN0
+SW[1] => m.IN0
+KEY[0] => m.IN1
+KEY[0] => m.IN1
+LEDR[0] <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LAB2_MUX|lab2_6:zad6|lab2_5:m1|lab2_3:m1
+SW[0] => m.IN0
+SW[1] => m.IN0
+KEY[0] => m.IN1
+KEY[0] => m.IN1
+LEDR[0] <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LAB2_MUX|lab2_6:zad6|lab2_5:m1|lab2_3:m2
 SW[0] => m.IN0
 SW[1] => m.IN0
 KEY[0] => m.IN1
