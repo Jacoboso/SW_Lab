@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LAB2_MUX
-Tue Mar 03 18:29:28 2020
+Tue Mar 03 19:46:57 2020
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Mar 03 18:29:28 2020       ;
+; Analysis & Synthesis Status     ; Successful - Tue Mar 03 19:46:57 2020       ;
 ; Quartus Prime Version           ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; LAB2_MUX                                    ;
 ; Top-level Entity Name           ; LAB2_MUX                                    ;
@@ -155,8 +155,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -166,14 +166,14 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                     ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                       ; Library ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------+---------+
-; LAB2_MUX.v                       ; yes             ; User Verilog HDL File  ; C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v ;         ;
-; lab2_3.v                         ; yes             ; User Verilog HDL File  ; C:/Users/mszne/Desktop/SW projekty/LAB2/lab2_3.v   ;         ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                               ;
++----------------------------------+-----------------+------------------------+----------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                 ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------+---------+
+; LAB2_MUX.v                       ; yes             ; User Verilog HDL File  ; G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v ;         ;
+; lab2_3.v                         ; yes             ; User Verilog HDL File  ; G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/lab2_3.v   ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------+
@@ -261,7 +261,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -271,58 +271,62 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Mar 03 18:29:08 2020
+    Info: Processing started: Tue Mar 03 19:46:48 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LAB2_MUX -c LAB2_MUX
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lab2_1.v
-    Info (12023): Found entity 1: lab2_1 File: C:/Users/mszne/Desktop/SW projekty/LAB2/lab2_1.v Line: 2
+    Info (12023): Found entity 1: lab2_1 File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/lab2_1.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file lab2_mux.v
-    Info (12023): Found entity 1: LAB2_MUX File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 1
+    Info (12023): Found entity 1: LAB2_MUX File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file lab2_2.v
-    Info (12023): Found entity 1: lab2_2 File: C:/Users/mszne/Desktop/SW projekty/LAB2/lab2_2.v Line: 1
+    Info (12023): Found entity 1: lab2_2 File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/lab2_2.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file lab2_3.v
-    Info (12023): Found entity 1: lab2_3 File: C:/Users/mszne/Desktop/SW projekty/LAB2/lab2_3.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at lab2_3.v(5): created implicit net for "x" File: C:/Users/mszne/Desktop/SW projekty/LAB2/lab2_3.v Line: 5
-Warning (10236): Verilog HDL Implicit Net warning at lab2_3.v(6): created implicit net for "y" File: C:/Users/mszne/Desktop/SW projekty/LAB2/lab2_3.v Line: 6
-Warning (10236): Verilog HDL Implicit Net warning at lab2_3.v(7): created implicit net for "s" File: C:/Users/mszne/Desktop/SW projekty/LAB2/lab2_3.v Line: 7
-Warning (10236): Verilog HDL Implicit Net warning at lab2_3.v(8): created implicit net for "m" File: C:/Users/mszne/Desktop/SW projekty/LAB2/lab2_3.v Line: 8
+    Info (12023): Found entity 1: lab2_3 File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/lab2_3.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file lab2_5.v
+    Info (12023): Found entity 1: lab2_5 File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/lab2_5.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file lab2_4.v
+    Info (12023): Found entity 1: lab2_4 File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/lab2_4.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at lab2_3.v(5): created implicit net for "x" File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/lab2_3.v Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at lab2_3.v(6): created implicit net for "y" File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/lab2_3.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at lab2_3.v(7): created implicit net for "s" File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/lab2_3.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at lab2_3.v(8): created implicit net for "m" File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/lab2_3.v Line: 8
 Info (12127): Elaborating entity "LAB2_MUX" for the top level hierarchy
-Info (12128): Elaborating entity "lab2_3" for hierarchy "lab2_3:zad3" File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 8
+Info (12128): Elaborating entity "lab2_3" for hierarchy "lab2_3:zad3" File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 8
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 4
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 4
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 4
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 4
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 4
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 4
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 4
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 4
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 4
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 4
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 4
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 4
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 4
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 4
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 4
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 4
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 4
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 4
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 11 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 2
-    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 2
-    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 2
-    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 2
-    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 2
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 2
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 2
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 2
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 3
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 3
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/mszne/Desktop/SW projekty/LAB2/LAB2_MUX.v Line: 3
+    Warning (15610): No output dependent on input pin "SW[2]" File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 2
+    Warning (15610): No output dependent on input pin "SW[3]" File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 2
+    Warning (15610): No output dependent on input pin "SW[4]" File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 2
+    Warning (15610): No output dependent on input pin "SW[5]" File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 2
+    Warning (15610): No output dependent on input pin "SW[6]" File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 2
+    Warning (15610): No output dependent on input pin "SW[7]" File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 2
+    Warning (15610): No output dependent on input pin "SW[8]" File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 2
+    Warning (15610): No output dependent on input pin "SW[9]" File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 2
+    Warning (15610): No output dependent on input pin "KEY[1]" File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 3
+    Warning (15610): No output dependent on input pin "KEY[2]" File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 3
+    Warning (15610): No output dependent on input pin "KEY[3]" File: G:/Semestr 6/SW/Lab 2/Repo/SW_Lab/LAB2_MUX.v Line: 3
 Info (21057): Implemented 25 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 14 input pins
     Info (21059): Implemented 10 output pins
     Info (21061): Implemented 1 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 28 warnings
-    Info: Peak virtual memory: 4821 megabytes
-    Info: Processing ended: Tue Mar 03 18:29:28 2020
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:41
+    Info: Peak virtual memory: 4814 megabytes
+    Info: Processing ended: Tue Mar 03 19:46:57 2020
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:18
 
 
